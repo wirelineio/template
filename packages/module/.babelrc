@@ -1,0 +1,25 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "10.10.0"
+        },
+        "modules": "commonjs"
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-export-default-from",
+    [
+      "babel-plugin-inline-import", {
+        "extensions": [
+          ".proto"
+        ]
+      }
+    ]
+  ]
+}

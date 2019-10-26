@@ -1,0 +1,58 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": "airbnb",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "settings": {
+    "react": {
+      "version": "16"
+    }
+  },
+  "rules": {
+    "arrow-body-style": "off",
+    "arrow-parens": "off",
+    "comma-dangle": "off",
+    "consistent-return": "off",
+    "dot-notation": "off",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "max-len": [2, 120, 2, {
+      "ignoreComments": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true,
+      "ignoreUrls": true
+      }
+    ],
+    "no-console": "off",
+    "no-multi-spaces": "off",
+    "no-nested-ternary": "off",
+    "no-param-reassign": "off",
+    "no-plusplus": "off",
+    "no-shadow": "off",
+    "no-underscore-dangle": "off",
+    "object-curly-newline": "off",
+    "operator-linebreak": "off",
+    "padded-blocks": "off",
+    "quote-props": "off",
+    "react/jsx-boolean-value": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/forbid-prop-types": "off",
+    "react/no-multi-comp": "off",
+    "react/prefer-stateless-function": "off",
+    "react/prop-types": "off"
+  }
+}

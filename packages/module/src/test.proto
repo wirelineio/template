@@ -1,0 +1,11 @@
+//
+// Copyright 2018 Wireline, Inc.
+//
+
+syntax = "proto3";
+
+package test;
+
+message Test {
+  string version = 1;
+}

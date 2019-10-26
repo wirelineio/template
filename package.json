@@ -1,0 +1,29 @@
+{
+  "name": "@wirelineio/template",
+  "version": "0.0.1",
+  "description": "Template monorepo.",
+  "license": "GPL-3.0",
+  "repository": "https://github.com/wirelineio/template",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "clean": "lerna run clean",
+    "build": "lerna run build",
+    "test": "lerna run test",
+    "lint": "lerna run lint",
+    "lint:fix": "lerna run lint -- --fix",
+    "lint:staged": "lint-staged",
+    "update": "yarn install --force"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "lerna": "^3.18.3",
+    "lint-staged": "^8.1.0",
+    "pre-commit": "^1.2.2",
+    "sort-package-json": "^1.22.1"
+  }
+}

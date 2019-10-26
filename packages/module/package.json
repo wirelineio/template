@@ -1,0 +1,27 @@
+{
+  "name": "@wirelineio/template-module",
+  "version": "0.0.1",
+  "description": "Template module dependency",
+  "license": "GPL-3.0",
+  "main": "src/index.js",
+  "module": "dist/es/index.js",
+  "scripts": {
+    "build": "npm run clean && babel ./src --out-dir ./dist/es --ignore \"**/*.test.js\"",
+    "clean": "rm -rf dist",
+    "lint": "eslint ./src --ignore-path ../../.eslintignore",
+    "test": "jest --no-cache"
+  },
+  "dependencies": {
+    "protocol-buffers": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-plugin-inline-import": "^3.0.0",
+    "jest": "^24.9.0"
+  }
+}
